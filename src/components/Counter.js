@@ -12,4 +12,3 @@ function Counter() {
 }
 
 export default Counter
-<h1>
