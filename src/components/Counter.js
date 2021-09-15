@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Button from '@material-ui/core/Button';
 import {useSelector, useDispatch} from 'react-redux'
 
 import {increment, decrement} from '../redux/counter/counterSlice'
@@ -11,8 +11,8 @@ function Counter() {
   return (
     <div>
       <h1>{countValue}</h1>
-      <button onClick={() => dispatch(decrement())}>Decrement</button>
-      <button onClick={() => dispatch(increment())}>Increment</button>
+      <Button variant="outlined" color="secondary" onClick={() => dispatch(decrement())}>Decrement</Button>
+      <Button variant="outlined" color="primary" onClick={() => dispatch(increment())}>Increment</Button>
     </div>
   )
 }
